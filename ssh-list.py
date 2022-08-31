@@ -2,14 +2,15 @@ import json
 from termcolor import colored
 import subprocess
 
-FILE = "/Users/tp/Documents/code/ssh-list/ssh-list.json"
+FILE = "ssh-list.json"
 
 def main():
-    f = open('/Users/tp/Documents/code/ssh-list/ssh-list.json')
+    f = open('ssh-list.json')
     data = json.load(f)
 
 
     print()
+    print("{:<5} {:<25} {:<65} {:<40}".format("", "instance name", "host", "description"))
     for i, server in enumerate(data['servers']):
 
         print_server_description(i, server)
@@ -29,11 +30,9 @@ def main():
 
 
 def print_server_description(i, server):
-    print(colored(str(i + 1), 'cyan') + ' ' + server['name'], end='\t\t')
-    print(colored(server['user'], 'green') + colored('@', 'red') + colored(server['ip'] + ' ' + ' '.join(server['args']), 'green'), end='\t')
-    print(colored(server['description'], 'grey', 'on_white'))
+    print("{:<5} {:<25} {:<65} {:<40}".format(colored(str(i + 1), 'cyan'), server['name'], colored(server['user'], 'green') + colored('@', 'red') + colored(server['ip'] + ' ' + ' '.join(server['args']), 'green'), colored(server['description'], 'grey', 'on_white')))
     if server['hint']:
-        print('\t' + colored('hint: ' + server['hint'], 'yellow'))
+        print(colored('  hint: ' + server['hint'], 'yellow'))
 
 
 def choose_server(data):
