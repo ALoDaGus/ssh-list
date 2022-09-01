@@ -2,10 +2,11 @@ import json
 from termcolor import colored
 import subprocess
 
-FILE = "ssh-list.json"
+FILE = "path/to/ssh/list/file.json"
+
 
 def main():
-    f = open('ssh-list.json')
+    f = open(FILE)
     data = json.load(f)
 
 

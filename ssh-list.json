@@ -2,94 +2,23 @@
   "servers": [
 
     {
-      "name": "thatchaphon-2183",
-      "ip": "139.5.147.212",
-      "user": "nc-user",
-      "description": "eco2.E 4 VCPUS / 8 GB RAM / 40 GB SSD Disk",
-      "args": [],
-      "address": "",
-      "hint": ""
-    },
-
-    {
-      "name": "test-kibana-01",
-      "ip": "139.5.145.175",
-      "user": "nc-user",
-      "description": "eco2.E 4 VCPUS / 8 GB RAM / 40 GB SSD Disk",
-      "args": [],
-      "address": "",
-      "hint": ""
-    },
-
-    {
-      "name": "test-nfs-01",
-      "ip": "139.5.146.140",
-      "user": "nc-user",
-      "description": "eco2.A 1 VCPUS / 2 GB RAM / 40 GB SSD Disk",
-      "args": [],
-      "address": "",
-      "hint": ""
-    },
-
-    {
-      "name": "uptimekuma",
-      "ip": "159.223.83.255",
+      "name": "instance 1",
+      "ip": "1.2.3.4",
       "user": "root",
       "description": "",
-      "args": [],
+      "args": ["-i", "/root/.ssh/key", "-p", "12345"],
       "address": "",
-      "hint": "พต"
+      "hint": "hello world"
     },
 
     {
-      "name": "encp-bkk-kube-master1",
-      "ip": "10.11.204.1",
-      "user": "thatchaphon_o",
-      "description": "encp-kube ncp-production-epc",
-      "args": ["-p", "12345"],
-      "address": "",
-      "hint": "FreeIPA forti"
-    },
-
-    {
-      "name": "encp-bkk-percona1",
-      "ip": "10.11.207.11",
-      "user": "thatchaphon_o",
-      "description": "",
-      "args": ["-p", "12345"],
-      "address": "",
-      "hint": "FreeIPA forti"
-    },
-
-    {
-      "name": "k8s-master-stg-02",
-      "ip": "10.16.200.172",
+      "name": "instance 2",
+      "ip": "2.3.4.5",
       "user": "root",
       "description": "",
-      "args": [],
+      "args": ["-i", "/root/.ssh/key", "-p", "12345"],
       "address": "",
-      "hint": ""
-    },
-
-    {
-      "name": "e-bkk-microk8s1",
-      "ip": "10.11.204.40",
-      "user": "guest",
-      "description": "test server",
-      "args": ["-p", "12345"],
-      "address": "",
-      "hint": "พต"
-    },
-
-    {
-      "name": "mysql-mongo-dev-epc",
-      "ip": "10.16.200.32",
-      "user": "ubuntu",
-      "description": "",
-      "args": [],
-      "address": "",
-      "hint": ""
+      "hint": "hello world"
     }
-
   ]
 }
