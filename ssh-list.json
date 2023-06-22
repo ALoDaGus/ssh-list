@@ -1,82 +1,12 @@
 {
   "servers": [
-
-    {
-      "name": "thatchaphon-2183",
-      "ip": "139.5.147.212",
-      "user": "nc-user",
-      "description": "eco2.E 4 VCPUS / 8 GB RAM / 40 GB SSD Disk",
-      "args": [],
-      "address": "",
-      "hint": ""
-    },
-
-    {
-      "name": "test-kibana-01",
-      "ip": "139.5.145.175",
-      "user": "nc-user",
-      "description": "eco2.E 4 VCPUS / 8 GB RAM / 40 GB SSD Disk",
-      "args": [],
-      "address": "",
-      "hint": ""
-    },
-
-    {
-      "name": "test-nfs-01",
-      "ip": "139.5.146.140",
-      "user": "nc-user",
-      "description": "eco2.A 1 VCPUS / 2 GB RAM / 40 GB SSD Disk",
-      "args": [],
-      "address": "",
-      "hint": ""
-    },
-
     {
       "name": "uptimekuma",
       "ip": "159.223.83.255",
       "user": "root",
+      "password": "",
       "description": "",
       "args": [],
-      "address": "",
-      "hint": "พต"
-    },
-
-    {
-      "name": "encp-bkk-kube-master1",
-      "ip": "10.11.204.1",
-      "user": "thatchaphon_o",
-      "description": "encp-kube ncp-production-epc",
-      "args": ["-p", "12345"],
-      "address": "",
-      "hint": "FreeIPA forti"
-    },
-
-    {
-      "name": "encp-bkk-percona1",
-      "ip": "10.11.207.11",
-      "user": "thatchaphon_o",
-      "description": "",
-      "args": ["-p", "12345"],
-      "address": "",
-      "hint": "FreeIPA forti"
-    },
-
-    {
-      "name": "k8s-master-stg-02",
-      "ip": "10.16.200.172",
-      "user": "root",
-      "description": "",
-      "args": [],
-      "address": "",
-      "hint": ""
-    },
-
-    {
-      "name": "e-bkk-microk8s1",
-      "ip": "10.11.204.40",
-      "user": "guest",
-      "description": "test server",
-      "args": ["-p", "12345"],
       "address": "",
       "hint": "พต"
     },
@@ -85,11 +15,83 @@
       "name": "mysql-mongo-dev-epc",
       "ip": "10.16.200.32",
       "user": "ubuntu",
+      "password": "",
       "description": "",
       "args": [],
       "address": "",
       "hint": ""
-    }
+    },
 
+    {
+      "name": "stg-haproxy",
+      "ip": "183.90.170.152",
+      "user": "ubuntu",
+      "password": "",
+      "description": "openstack stg",
+      "args": [],
+      "address": "",
+      "hint": ""
+    },
+
+    {
+      "name": "zabbix-stellar",
+      "ip": "202.94.168.99",
+      "user": "guest",
+      "password": "",
+      "description": "",
+      "args": ["-p", "12345"],
+      "address": "",
+      "hint": ""
+    },
+    {
+      "name": "cybedge-ctr-1",
+      "ip": "10.10.10.101",
+      "user": "ubuntu",
+      "password": "",
+      "description": "",
+      "args": [],
+      "address": "",
+      "hint": ""
+    },
+    {
+      "name": "roxy-wi",
+      "ip": "10.11.217.30",
+      "user": "guest",
+      "password": "",
+      "description": "proxmox prod",
+      "args": ["-i", "~/.ssh/guest-ncp", "-p", "12345"],
+      "address": "",
+      "hint": "พต"
+    },
+    {
+      "name": "pond-openstack-aio",
+      "ip": "202.129.205.147",
+      "user": "thatchaphon_o",
+      "password": "",
+      "description": "proxmox test openstack node 1",
+      "args": [],
+      "address": "",
+      "hint": ""
+    },
+    {
+      "name": "gos-haproxy",
+      "ip": "202.129.205.147",
+      "user": "ubuntu",
+      "password": "",
+      "description": "stg inno",
+      "args": [],
+      "address": "",
+      "hint": ""
+    },
+    {
+      "name": "e-bkk-dev-kube-master1",
+      "ip": "100.127.2.1",
+      "user": "thatchaphon_o",
+      "password": "",
+      "description": "dev-stg",
+      "args": [],
+      "address": "",
+      "hint": ""
+    }
   ]
 }
